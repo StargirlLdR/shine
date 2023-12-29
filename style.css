@@ -1,0 +1,631 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Header styles */
+  header {
+    background: #E6E6E6;
+    padding: 10px 0;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    animation: 2s forwards;
+  }
+
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 60px;
+
+  }
+  
+  .search-container {
+    display: flex;
+  }
+  
+  .search-container input[type="search"] {
+    padding: 5px;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .logo{
+    position: absolute;
+    width: 113.69px;
+    height: 87.69px;
+    left: 30.84px;
+    top: -9.68px;
+    margin-top: 10px;
+    
+}
+  .contact-container {
+    display: flex;
+  }
+  
+  .contact-container a {
+    margin-left: 20px;
+  }
+
+  .image-container 
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 640px;
+  margin-top: 90px;
+}
+
+.body
+{
+  background: #E6E6E6;
+  font-family: 'Poppins', sans-serif;
+}
+.Voon
+{
+    position: relative;
+    width: 100%;
+    height: 263px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 120px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  border: 0;
+  background-color: #5bb53d;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 5px;
+  background-color: rgba(15, 55, 20, 0.3);
+}
+
+img {
+  vertical-align: middle;
+}
+.voon
+{
+  width: 1200px;
+  display: flex;
+  text-align: start;
+  font-size: 40px;
+  margin-bottom: 170px;
+  color: #000000;
+}
+.voon_1
+{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.Toop
+{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img
+{
+  animation: smaller 0.5s forwards;
+}
+.toop
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* определите количество и ширину колонок сетки */
+  grid-template-rows: repeat(1, 1fr); /* определите количество и высоту строк сетки */
+  gap: 30px; /* определите промежуток между ячейками сетки */
+  /*background-color: rgba(0, 0, 0, 0.5);  установите цвет фона сетки */
+  justify-items: center;
+  align-items: end;
+  margin: 0;
+}
+.toop_1
+{
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* определите количество и ширину колонок сетки */
+  grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr); /* определите количество и высоту строк сетки */
+  gap: 0px; 
+  justify-items: start;
+  font-size: 40px;
+
+}
+.cate-hover
+{
+  animation: smaller 0.5s forwards;
+}
+
+.pic
+{
+  width: 650px;
+  height: 653px;
+  margin-bottom: 30px;
+  animation: smaller 0.5s forwards;
+}
+.foop
+{
+  width: 200px;
+  height: 50px;
+  border: 1px solid black ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 360px;
+  font-size: 20px;
+}
+.foop:hover
+{
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    transition: 2s;
+}
+
+.toop2
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* определите количество и ширину колонок сетки */
+  grid-template-rows: repeat(1, 1fr); /* определите количество и высоту строк сетки */
+   /* определите промежуток между ячейками сетки */
+  /*background-color: rgba(0, 0, 0, 0.5);  установите цвет фона сетки */
+  justify-items: self-start;
+  margin: 0;
+  align-items: center;
+}
+
+.Woop {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.woop {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.woop_1 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.image 
+{
+  border-radius: 50%;
+  width: 200px; /* Или 100% если нужно растянуть на весь контейнер */
+  height: 200px; /* Сделать круглым */
+  object-fit: cover;
+  animation: smaller 0.5s forwards;
+}
+
+.woop_1 h3 
+{
+  margin-top: 10px;
+}
+
+.woop_1 p 
+{
+  margin: 5px 0;
+}
+
+.woop_1 button 
+{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Цвет кнопки */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase; /* Большими буквами */
+}
+
+.action-button {
+  padding: 5px 10px; /* Внутренние отступы */
+  border: none; /* Убрать границу */
+  background-color: black; /* Фон кнопки */
+  color: white; /* Цвет текста кнопки */
+  text-transform: uppercase; /* Текст большими буквами */
+  cursor: pointer; /* Курсор в виде указателя */
+}
+.woop_1 button:hover {
+  background-color: #333; /* Фон кнопки при наведении */
+}
+
+.Boop
+{
+    position: relative;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boop
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* определите количество и ширину колонок сетки */
+  grid-template-rows: repeat(1, 1fr); /* определите количество и высоту строк сетки */
+  gap: 40px; /* определите промежуток между ячейками сетки */
+  /*background-color: rgba(0, 0, 0, 0.5);  установите цвет фона сетки */
+  justify-items: center;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.Voon1
+{
+    position: relative;
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 120px;
+}
+  
+.voon1
+{
+  width: 1200px;
+  display: flex;
+  text-align: start;
+  font-size: 40px;
+  margin-bottom: 70px;
+  
+}
+
+.tea-types {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.tea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.tea p {
+  margin-top: 10px;
+  margin-right: 300px;
+  font-size: 20px; /* Регулируйте размер шрифта в зависимости от нужд */
+}
+
+ 
+
+.footer h3 {
+    margin-bottom: 10px; /* Отступ после заголовков */
+}
+
+.ul {
+    list-style: none; /* Убрать маркеры списка */
+    padding: 0; /* Убрать отступы у списка */
+    margin: 0; /* Убрать внешние отступы у списка */
+}
+
+.registration-container {
+  display: grid;
+  grid-template-rows: auto 1fr; /* Логотип и форма */
+  
+  justify-items: center; /* Центрирование содержимого по горизонтали */
+  align-items: center; /* Центрирование содержимого по вертикали */
+  background-color: #f5f5f5; /* Цвет фона */
+}
+
+.logo-container {
+  text-align: center; /* Центрирование логотипа и названия */
+}
+
+.logo1 {
+  width: 250px; 
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0; /* Отступы для параграфов */
+}
+.logo-img {
+  width: 100px;
+   /* Размер логотипа */
+}
+
+.logo-container {
+  text-align: center; /* Центрирование логотипа и названия */
+}
+
+.logo {
+  width: 100px; /* Размер логотипа */
+  margin-bottom: 10px; /* Отступ между логотипом и названием */
+}
+
+.registration-form {
+  display: grid;
+  gap: 10px; /* Отступы между полями формы */
+  width: 300px; /* Ширина формы */
+}
+
+.registration-form input,
+.registration-form button {
+  padding: 15px; /* Отступы внутри полей ввода и кнопки */
+  border: 1px solid #ccc; /* Граница полей ввода */
+}
+
+.registration-form button {
+  background-color: #333; /* Цвет кнопки */
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убрать стандартную границу кнопки */
+  cursor: pointer; /* Курсор в виде указателя */
+}
+
+.registration-form button:hover {
+  background-color: #555; /* Цвет кнопки при наведении */
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hides the nav on small screens, could replace with mobile menu toggle */
+  }
+  .search-container, .contact-container {
+    flex-direction: column;
+  }
+}
+
+
+
+/* Другие стили анимации и т.д. */
+
+@keyframes header {
+  0% {transform: translateY(-150%);}
+  100% {transform: translateY(0);}
+}
+
+
+@keyframes header {
+  0% {transform: translateY(-150%);}
+  100% {transform: translateY(0);}
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0 5%;
+    height: 80px;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  
+  .search-container input[type="search"] {
+    width: 100%;
+  }
+  
+  .search-container button {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  
+  .image-container {
+    margin-top: 60px;
+  }
+  
+  .voon {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    padding: 0 2%;
+    height: 100px;
+  }
+  
+  .search-container input[type="search"] {
+    padding: 3px;
+  }
+  
+  .search-container button {
+    padding: 3px 5px;
+  }
+  
+  .contact-container a {
+    margin-left: 10px;
+  }
+  
+  .voon {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .voon {
+    width: 1200px;
+    font-size: 40px;
+  }
+  
+  .pic {
+    width: 650px;
+    height: 653px;
+  }
+  
+  .foop {
+    margin-left: 360px;
+  }
+  
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+}@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  .voon {
+    width: 800px;
+    font-size: 30px;
+  }
+  
+  .pic {
+    width: 500px;
+    height: 503px;
+  }
+  
+  .foop {
+    margin-left: 260px;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  .voon {
+    width: 800px;
+    font-size: 30px;
+  }
+  
+  .pic {
+    width: 500px;
+    height: 503px;
+  }
+  
+  .foop {
+    margin-left: 260px;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+}
+ @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hides the nav on small screens, could replace with mobile menu toggle */
+    }
+    .search-container, .contact-container {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонны с одинаковой шириной */
+    gap: 20px; /* Промежуток между колоннами */
+    background-color: #f0f0f0; /* Цвет фона футера */
+    padding: 20px; /* Отступ внутри футера */
+    color: #333; /* Цвет текста */
+}
+@media only screen and (max-width: 600px) {
+  .grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 колонка */
+  }
+}
+@media only screen and (max-width: 900px) {
+  .registration-container {
+      grid-template-rows: auto auto; /* Логотип и форма отображаются один под другим */
+  }
+
+  .logo-container {
+      margin-bottom: 20px; /* Увеличиваем отступ между логотипом и названием */
+  }
+}
+@media only screen and (max-width: 900px) {
+  .registration-container {
+      grid-template-rows: auto auto; /* Логотип и форма отображаются один под другим */
+  }
+
+  .logo-container {
+      margin-bottom: 20px; /* Увеличиваем отступ между логотипом и названием */
+  }
+}
+@media only screen and (max-width: 900px) {
+  .registration-container {
+      grid-template-rows: auto auto; /* Логотип и форма отображаются один под другим */
+  }
+
+  .logo-container {
+      margin-bottom: 20px; /* Увеличиваем отступ между логотипом и названием */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 колонка */
+  }
+
+  .tea p {
+    margin-right: 0; /* Убираем отступ справа */
+    margin-top: 0; /* Убираем отступ сверху */
+    text-align: center; /* Выравниваем текст по центру */
+  }
+}
+@media only screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 10px; /* Уменьшаем отступы между элементами */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
